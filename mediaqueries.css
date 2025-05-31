@@ -1,103 +1,131 @@
+/* MEDIA QUERIES */
+
+/* Up to 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
   }
+
   .about-containers {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow items to wrap in about section */
   }
+
   #contact,
   #projects {
-    height: fit-content;
+    height: fit-content; /* Let content determine height */
   }
 }
 
+/* Up to 1200px */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none;
+    display: none; /* Hide desktop nav */
   }
+
   #hamburger-nav {
-    display: flex;
+    display: flex; /* Show hamburger nav */
   }
+
   #experience,
   .experience-details-container {
-    margin-top: 2rem;
+    margin-top: 2rem; /* Add spacing on top */
   }
+
   #profile,
   .section-container {
-    display: block;
+    display: block; /* Stack elements vertically */
   }
+
   .arrow {
-    display: none;
+    display: none; /* Hide decorative arrows */
   }
+
   section,
   .section-container {
-    height: fit-content;
+    height: fit-content; /* Auto height for sections */
   }
+
   section {
-    margin: 0 5%;
+    margin: 0 5%; /* Smaller horizontal margins */
   }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 2rem; /* Center picture container and add bottom spacing */
   }
+
   .about-containers {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin */
   }
 }
 
+/* Up to 600px */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 40vh; /* Reduce height for smaller screens */
   }
+
   #profile {
     height: 83vh;
-    margin-bottom: 0;
+    margin-bottom: 0; /* Remove bottom margin */
   }
+
   article {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size for readability */
   }
+
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Add bottom spacing */
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap flex items */
   }
+
   .contact-info-container {
-    margin: 0;
+    margin: 0; /* Remove margins */
   }
+
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 1rem; /* Ensure readable font size */
   }
+
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Smaller subtitle */
   }
+
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller logo */
   }
+
   .nav-links {
-    flex-direction: column;
+    flex-direction: column; /* Stack nav links vertically */
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 46vw; /* Responsive height relative to viewport width */
     justify-content: center;
   }
+
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Smaller paragraph font */
   }
+
   .title {
-    font-size: 2rem;
+    font-size: 2rem; /* Smaller titles */
   }
+
   .text-container {
-    text-align: justify;
+    text-align: justify; /* Justify text for better readability */
   }
 }
